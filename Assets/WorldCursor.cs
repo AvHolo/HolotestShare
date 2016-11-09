@@ -26,11 +26,13 @@ public class WorldCursor : MonoBehaviour
             // If the raycast hit a hologram...
             // Display the cursor mesh.
             meshRenderer.enabled = true;
+            this.transform.position += Vector3.down * 0.005F;
         }
         else
         {
             // If the raycast did not hit a hologram, hide the cursor mesh.
-            meshRenderer.enabled = false;
+            meshRenderer.enabled = true;
+            this.transform.position += Vector3.up * 0.003F;
         }
     }
 }
