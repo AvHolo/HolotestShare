@@ -28,10 +28,10 @@ public class WorldCursor : MonoBehaviour
             meshRenderer.enabled = true;
 
             // Move the cursor to the point where the raycast hit.
-            this.transform.position = hitInfo.point;
+            //this.transform.position = hitInfo.point;
 
             // Rotate the cursor to hug the surface of the hologram.
-            this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+            //this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
         }
         else
         {
